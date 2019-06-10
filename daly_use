@@ -1,0 +1,9 @@
+#!/bin/bash
+while [ 1 = 1 ];do
+        echo "right";
+        qstat -j 866332|grep "usage" >> 860912_bismark_parallel5.txt;
+        qstat -j 866333|grep "usage" >> 860912_bismark_parallel5_0.txt;
+        qstat -j 866334|grep "usage" >> 860912_bismark_parallel5_0_32.txt;
+        sleep 300;
+done;
+
